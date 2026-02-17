@@ -1,5 +1,5 @@
 import java.util.LinkedList;
-public class JVM {
+public class JavaCollectionFrameworks {
     //java collection framework
     public static void main(String args[]){
         //create
