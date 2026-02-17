@@ -1,1 +1,0 @@
-System.out.println("the total count of prime numbers in the range :"+PrintPrime(10));
