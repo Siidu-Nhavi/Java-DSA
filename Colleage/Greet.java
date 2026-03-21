@@ -1,6 +1,4 @@
-package myPackage;
-
-public class Greetings {
+public class Greet {
     public void sayHello() {
         System.out.println("Good morning");
     }

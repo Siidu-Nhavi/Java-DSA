@@ -1,4 +1,3 @@
-package myPackage;
 public class Greetings {
     public void sayHello(){
         System.out.println("Good morning");
