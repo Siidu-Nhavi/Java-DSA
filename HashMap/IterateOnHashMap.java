@@ -18,5 +18,10 @@ public class IterateOnHashMap {
           for (String str : k) {
             System.out.println("Key="+str+",Value="+map.get(str));
           }
+
+          System.out.println("-----------------");
+          System.out.println("without iteraing ");
+          Set<Map.Entry<String,Integer>> ent = map.entrySet();
+          System.out.println(ent);
     }
 }
