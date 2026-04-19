@@ -7,9 +7,8 @@ public class Hashset {
         set.add("nagar");
         set.add("sangli");
         
-        Iterator it = set.iterator();
-        while(it.hasNext()){
-            System.out.println(it.next());
+        while(set.iterator().hasNext()){
+            System.out.println( set.iterator().next());
         }
         set.remove("pune");
         set.clear();
