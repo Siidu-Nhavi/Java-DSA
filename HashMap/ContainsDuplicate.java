@@ -15,14 +15,12 @@ public class ContainsDuplicate {
     public static boolean isContainsDuplicate(int arr[]){
         HashSet<Integer> s = new HashSet<>();
         for(int num : arr){
-            s.add(num);
             if(s.contains(num)){
                 return true;
+            }else{
+                s.add(num);
             }
-            return false;
         }
-        
-
         
         return false;
     }
