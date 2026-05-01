@@ -1,3 +1,4 @@
+import java.util.*;
 public class ContainsDuplicate {
     public static boolean containsDuplicate(int arr[]){
         for(int i=0;i<arr.length;i++){
@@ -9,8 +10,24 @@ public class ContainsDuplicate {
         }
         return false;
     }
+    //optimization using hashset
+    
+    public static boolean isContainsDuplicate(int arr[]){
+        HashSet<Integer> s = new HashSet<>();
+        for(int num : arr){
+            s.add(num);
+            if(s.contains(num)){
+                return true;
+            }
+            return false;
+        }
+        
+
+        
+        return false;
+    }
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,7,8,9,1};
-         System.out.print(containsDuplicate(arr));
+         System.out.print(isContainsDuplicate(arr));
     }
 }
