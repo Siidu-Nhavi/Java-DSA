@@ -10,9 +10,11 @@ public class ContainsDuplicate {
         }
         return false;
     }
+
     //optimization using hashset
     
     public static boolean isContainsDuplicate(int arr[]){
+        
         HashSet<Integer> s = new HashSet<>();
         for(int num : arr){
             if(s.contains(num)){
