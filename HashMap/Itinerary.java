@@ -25,6 +25,7 @@ public class Itinerary {
         for(String key : map.keySet()){
             System.out.println("->"+map.get(start));
             start = map.get(start);
+            System.out.print(key); // use comment here this not important
         }
         System.out.println();
 
