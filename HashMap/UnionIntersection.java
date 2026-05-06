@@ -6,12 +6,12 @@ public class UnionIntersection {
         for(int i=0;i<arr1.length;i++){ // add elemetns into set
             s.add(arr1[i]);
         }
-        for(int i=0;i<arr2.length;i++){
-            s.add(arr2[i]);
+        for(int i=0;i<arr2.length;i++){ // loop on 2nd array 
+            s.add(arr2[i]); // add the elements into the map
         }
         
         System.out.println("the union  elements are");
-        for(int num:s){
+        for(int num:s){ // loop on map and print the union elements 
             System.out.println(num);
         }
 
