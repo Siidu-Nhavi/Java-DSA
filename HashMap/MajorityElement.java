@@ -2,7 +2,7 @@ import java.util.*;
 
 public class MajorityElement {
     public static int majorityElement(int arr[]) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> map = new HashMap<>(); // creation of map
         //count frequency
         for(int i=0;i<arr.length;i++){
             if(map.containsKey(arr[i])){
@@ -14,7 +14,7 @@ public class MajorityElement {
         }
         int n= arr.length;
         for(int key:map.keySet()){
-            if(map.get(key) > n/2){
+            if(map.get(key) > n/3){
                 return key;
             }
         }
