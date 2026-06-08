@@ -76,7 +76,7 @@ public class BottomViewOfBinaryTree {
         root.left.right.left = new Node(10);
         root.left.right.right = new Node(14);
 
-        BottomViewOfBinaryTree b = new BottomViewOfBinaryTree();cl
+        BottomViewOfBinaryTree b = new BottomViewOfBinaryTree();
 
         System.out.println(b.bottomView(root));
     }
