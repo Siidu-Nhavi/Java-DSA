@@ -2,13 +2,11 @@ public class StartsWith {
     static class Node {
         Node[] child = new Node[26];
         boolean isEof = false;
-        int freq;
 
         Node() {
             for (int i = 0; i < child.length; i++) {
                 child[i] = null;
             }
-            freq = 0;
         }
     }
 
@@ -22,7 +20,6 @@ public class StartsWith {
             if (curr.child[idx] == null) {
                 curr.child[idx] = new Node();
             }
-            curr.child[idx].freq++;
             curr = curr.child[idx];
         }
         curr.isEof = true;
