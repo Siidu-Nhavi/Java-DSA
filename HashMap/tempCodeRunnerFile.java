@@ -1,0 +1,1 @@
+ // System.out.println("The no of distinct elements are="+countDistict(arr));
