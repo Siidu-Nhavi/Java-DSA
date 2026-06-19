@@ -37,7 +37,7 @@ public class Prefix {
             System.out.println(ans);
             return;
         }
-        for (int i = 0; i < root.childern.length; i++) {
+        for (int i = 0; i < 26; i++) { //root.child.length is also correct
             if (root.childern[i] != null) {
                 findPrefix(root.childern[i], ans + (char) (i + 'a'));
             }
